@@ -4,6 +4,9 @@
  *     int val;
  *     struct ListNode *next;
  * };
+ A：没有改变输入。
+ D：未考虑到数溢出的情况，且算出num1 num2再相加太慢。
+ 改进：可以对num1 num2的每一位边读边计算，每位相加可能产生进位。注意Num1 num2长度不同的情况，以及数为0的情况。
  */
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
     struct ListNode *L;
